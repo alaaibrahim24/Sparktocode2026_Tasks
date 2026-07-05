@@ -193,14 +193,20 @@
             else
             {
                 Console.WriteLine("First Position: " + first);
-                Console.WriteLine("Last Position: " + last);
+                Console.WriteLine("Last Position: " + last); 
             }
 
             ////////////////////////////////////////////////////////////////
             ///
 
+            ///Task 11 – One-Time Password (OTP) Generator
+            ///
 
 
+            ///////////////////////////////////////////////////////////////////////////////
+            ///
+
+            ///Task 12 – Leap Year Checker 
 
 
 
