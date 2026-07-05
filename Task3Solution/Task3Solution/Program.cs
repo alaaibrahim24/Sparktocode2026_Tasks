@@ -105,16 +105,17 @@
 
                 if (password.ToLower().Contains("password"))
                     Console.WriteLine("Reason: Contains the word 'password'");
+            }
 
 
-                ///////////////////////////////////////////////////////////////////
-                ///
+            ///////////////////////////////////////////////////////////////////
+            ///
 
 
-                ///Task 7 – Clean Name Comparator
-                ///
+            ///Task 7 – Clean Name Comparator
+            ///
 
-                Console.Write("Enter first name: ");
+            Console.Write("Enter first name: ");
                 string name1 = Console.ReadLine().Trim().ToUpper();
 
                 Console.Write("Enter second name: ");
@@ -129,6 +130,13 @@
                 ///
 
 
+                ///Task 8 – Membership Expiry Checker
+                ///
+
+
+
+                ///////////////////////////////////////////////////////////////////////////////
+                ///
 
 
 
