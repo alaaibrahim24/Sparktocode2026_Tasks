@@ -241,9 +241,11 @@
 
 
 
+            //10- simple ATM Simulation
+            // Some Code To Solove The Task 
 
 
-
+            // I DONT KNOW HOW TO DO IT YET
 
 
 
