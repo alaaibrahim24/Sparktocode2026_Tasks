@@ -159,6 +159,19 @@
             ///
 
 
+            ///Task 9 – Round Up / Round Down Explorer 
+            ///
+
+
+            Console.Write("Enter decimal number: ");
+            _= Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Nearest: " + Math.Round(number));
+            Console.WriteLine("Round Up: " + Math.Ceiling(number));
+            Console.WriteLine("Round Down: " + Math.Floor(number));
+
+            ////////////////////////////////////////////////////////////////
+            ///
 
 
 
@@ -227,5 +240,5 @@
 
 
         }
-        }
+    }
 }
