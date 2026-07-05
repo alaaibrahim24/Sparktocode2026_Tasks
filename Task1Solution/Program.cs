@@ -21,6 +21,16 @@
 
 
 
+            //Task 2: Rectangle Calculator
+
+            Console.Write("Enter length: ");
+            double len = double.Parse(Console.ReadLine());
+            Console.Write("Enter width: ");
+            double wid = double.Parse(Console.ReadLine());
+            Console.WriteLine($"Area: {len * wid}, Perimeter: {2 * (len + wid)}");
+
+            //////////////////////////////////////////////////////////
+            ///
 
 
 
