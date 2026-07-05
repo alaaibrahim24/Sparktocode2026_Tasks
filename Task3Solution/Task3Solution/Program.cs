@@ -16,7 +16,27 @@
 
             double difference = Math.Abs(num1 - num2);
 
-            Console.WriteLine("Positive Difference: " + difference); 
+            Console.WriteLine("Positive Difference: " + difference);
+
+
+
+            ///////////////////////////////////////////////////////////////
+            ///
+
+
+            /////Task 2 – Power & Root Explorer
+
+
+            Console.Write("Enter a number: ");
+            double number = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Square: " + Math.Pow(number, 2));
+            Console.WriteLine("Square Root: " + Math.Sqrt(number));
+
+
+            ////////////////////////////////////////////////////////////////
+            ///
+
 
 
 
