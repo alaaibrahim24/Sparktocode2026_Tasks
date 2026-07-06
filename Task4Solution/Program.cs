@@ -19,7 +19,12 @@
             /////////////////////////////////////////////////////
             ///
 
+            //Task 3 (CelsiusToFahrenheit)
 
+            static double CelsiusToFahrenheit(double c) { return (c * 9 / 5) + 32; }
+
+            //////////////////////////////////////////////////////
+            ///
 
 
 
