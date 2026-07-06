@@ -41,6 +41,13 @@
             //////////////////////////////////////////////////////
             ///
 
+            //Task 6 (Area & Perimeter)
+
+            static double CalculateArea(double l, double w) { return l * w; }
+            static double CalculatePerimeter(double l, double w) { return 2 * (l + w); }
+
+            //////////////////////////////////////////////////////
+            ///
 
 
 
