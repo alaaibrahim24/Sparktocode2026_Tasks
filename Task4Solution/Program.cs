@@ -4,7 +4,55 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            //Task 1 (PrintWelcome)
+
+            static void PrintWelcome(string name) { Console.WriteLine("Welcome, " + name + "!"); } 
+
+            ///////////////////////////////////////////////////
+            ///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
