@@ -7,11 +7,17 @@
 
             //Task 1 (PrintWelcome)
 
-            static void PrintWelcome(string name) { Console.WriteLine("Welcome, " + name + "!"); } 
+            static void PrintWelcome(string name) { Console.WriteLine("Welcome, " + name + "!"); }
 
             ///////////////////////////////////////////////////
             ///
 
+            //Task 2 (Square)
+
+            static int Square(int n) { return n * n; }
+
+            /////////////////////////////////////////////////////
+            ///
 
 
 
