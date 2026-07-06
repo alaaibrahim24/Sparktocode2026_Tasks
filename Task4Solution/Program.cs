@@ -78,6 +78,28 @@
             //////////////////////////////////////////////////////
             ///
 
+            //Task 10 (CalculateArea Overloading)
+
+            //Console.Write("Enter shape (square/rectangle): ");
+            //string shape = Console.ReadLine();
+           // if (shape == "square")
+           // {
+              //  Console.Write("Enter side: ");
+              //  double side = Convert.ToDouble(Console.ReadLine());
+              //  Console.WriteLine("Area: " + CalculateArea(side));
+           // }
+            //else if (shape == "rectangle")
+           // {
+              //  Console.Write("Enter length: ");
+              //  double l = Convert.ToDouble(Console.ReadLine());
+               // Console.Write("Enter width: ");
+               // double w = Convert.ToDouble(Console.ReadLine());
+              //  Console.WriteLine("Area: " + CalculateArea(l, w));
+           // }
+
+
+            //////////////////////////////////////////////////////
+            ///
 
 
 
@@ -110,8 +132,11 @@
 
 
 
+        }
 
-
+        private static string CalculateArea(double side)
+        {
+            throw new NotImplementedException();
         }
     }
 }
