@@ -2,6 +2,14 @@
 {
     internal class Program
     {
+        private static object name;
+
+        private static object avg;
+
+        private static object grade;
+
+        private static object printReportCard;
+
         static void Main(string[] args)
         {
 
@@ -106,7 +114,48 @@
 
             //////////////////////////////////////////////////  
 
-            
+            //Task 12  (Student Report Card Generator)
+
+            Console.Write("Enter student name: ");
+            string studentName = Console.ReadLine();
+
+            Console.Write("Enter student score 1: ");
+            double score1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter student score 2: ");
+            double score2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter student score 3: ");
+            double score3 = double.Parse(Console.ReadLine());
+
+            double avg = (score1 + score2 + score3);
+            string grade = GetGradeLetter((int)avg);
+
+            printReportCard((string)name, avg, grade);
+
+            static double calculateAverage(double s1, double s2, double s3)
+            {
+                return (s1 + s2 + s3) / 3;
+            }
+            //static string GetGradeLetter(double average)
+            //{
+            //if (average >= 90) return "A";
+            //else if (average >= 80) return "B";
+            //else if (average >= 70) return "C";
+            //else if (average >= 60) return "D";
+            //else return "F";
+            //}
+
+            static void printReportCard(string name, double avg, string grade)
+            {
+                Console.WriteLine("Student Name: " + name);
+                Console.WriteLine("Average Score: " + avg);
+                Console.WriteLine("Grade: " + grade);
+
+            }
+            /////////////////////////////////////////////////////// 
+
+
 
 
 
