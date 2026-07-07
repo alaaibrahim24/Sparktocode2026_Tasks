@@ -123,6 +123,46 @@
             ///////////////////////////////////////////////////////////////////////////////
             ///
 
+            //Task 6 – Filtered Shopping List
+
+            List<string> shoppingList = new List<string>();
+
+            string item = "";
+
+            while (item.ToLower() != "done")
+            {
+                Console.Write("Enter item (type done to finish): ");
+                item = Console.ReadLine();
+
+                if (item.ToLower() != "done")
+                {
+                    shoppingList.Add(item);
+                }
+            }
+
+            Console.WriteLine("\nShopping List:");
+
+            foreach (string product in shoppingList)
+            {
+                Console.WriteLine(product);
+            }
+
+            Console.Write("\nEnter item to remove: ");
+            string removeItem = Console.ReadLine();
+
+            shoppingList.Remove(removeItem);
+
+            Console.WriteLine("\nShopping List After Removal:");
+
+            foreach (string product in shoppingList)
+            {
+                Console.WriteLine(product);
+            }
+
+            ///////////////////////////////////////////////////////////////////////////////
+            ///
+
+
 
 
 
