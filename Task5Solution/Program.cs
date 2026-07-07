@@ -127,16 +127,16 @@
 
             List<string> shoppingList = new List<string>();
 
-            string item = "";
+            string shoppingItem = "";
 
-            while (item.ToLower() != "done")
+            while (shoppingItem.ToLower() != "done")
             {
                 Console.Write("Enter item (type done to finish): ");
-                item = Console.ReadLine();
+                shoppingItem = Console.ReadLine();
 
-                if (item.ToLower() != "done")
+                if (shoppingItem.ToLower() != "done")
                 {
-                    shoppingList.Add(item);
+                    shoppingList.Add(shoppingItem);
                 }
             }
 
@@ -184,6 +184,40 @@
             ///////////////////////////////////////////////////////////////////////////////
             ///
 
+            //Task 8 – Undo Last Action
+
+            Stack<string> actions = new Stack<string>();
+
+            string action = "";
+
+            while (action.ToLower() != "stop")
+            {
+                Console.Write("Enter action (type stop to finish): ");
+                action = Console.ReadLine();
+
+                if (action.ToLower() != "stop")
+                {
+                    actions.Push(action);
+                }
+            }
+
+            Console.WriteLine();
+
+            if (actions.Count > 0)
+                Console.WriteLine("Undo: " + actions.Pop());
+
+            if (actions.Count > 0)
+                Console.WriteLine("Undo: " + actions.Pop());
+
+            Console.WriteLine("\nRemaining Actions:");
+
+            foreach (string item in actions)
+            {
+                Console.WriteLine(item);
+            }
+
+            //////////////////////////////////////////////////////////////////////////////
+            ///
 
 
 
