@@ -141,7 +141,35 @@ namespace banking_capstone_Solution
 
         static void WithdrawMoney()
         {
+            Console.Write("Enter Account Number: ");
+            string account = Console.ReadLine();
 
+            int index = accountNumbers.IndexOf(account);
+
+            if (index == -1)
+            {
+                Console.WriteLine("Account not found.");
+                return;
+            }
+
+            Console.Write("Enter Withdraw Amount: ");
+            double amount = double.Parse(Console.ReadLine());
+
+            if (amount <= 0)
+            {
+                Console.WriteLine("Invalid amount.");
+                return;
+            }
+
+            if (amount > balances[index])
+            {
+                Console.WriteLine("Insufficient Balance.");
+                return;
+            }
+
+            balances[index] -= amount;
+
+            Console.WriteLine("Withdrawal Successful.");
         }
 
         static void ShowBalance()
