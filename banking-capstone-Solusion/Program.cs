@@ -114,7 +114,29 @@ namespace banking_capstone_Solution
 
         static void DepositMoney()
         {
+            Console.Write("Enter Account Number: ");
+            string account = Console.ReadLine();
 
+            int index = accountNumbers.IndexOf(account);
+
+            if (index == -1)
+            {
+                Console.WriteLine("Account not found.");
+                return;
+            }
+
+            Console.Write("Enter Deposit Amount: ");
+            double amount = double.Parse(Console.ReadLine());
+
+            if (amount <= 0)
+            {
+                Console.WriteLine("Invalid amount.");
+                return;
+            }
+
+            balances[index] += amount;
+
+            Console.WriteLine("Deposit Successful.");
         }
 
         static void WithdrawMoney()
