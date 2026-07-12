@@ -247,7 +247,20 @@ namespace banking_capstone_Solution
 
         static void SearchCustomer()
         {
+            Console.Write("Enter Customer Name: ");
+            string name = Console.ReadLine();
 
+            int index = customerNames.IndexOf(name);
+
+            if (index == -1)
+            {
+                Console.WriteLine("Customer not found.");
+                return;
+            }
+
+            Console.WriteLine("Customer : " + customerNames[index]);
+            Console.WriteLine("Account  : " + accountNumbers[index]);
+            Console.WriteLine("Balance  : " + balances[index]);
         }
     }
 }
