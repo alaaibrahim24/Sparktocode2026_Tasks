@@ -230,7 +230,19 @@ namespace banking_capstone_Solution
 
         static void ListAllAccounts()
         {
+            if (accountNumbers.Count == 0)
+            {
+                Console.WriteLine("No Accounts Found.");
+                return;
+            }
 
+            for (int i = 0; i < accountNumbers.Count; i++)
+            {
+                Console.WriteLine("--------------------------");
+                Console.WriteLine("Customer : " + customerNames[i]);
+                Console.WriteLine("Account  : " + accountNumbers[i]);
+                Console.WriteLine("Balance  : " + balances[i]);
+            }
         }
 
         static void SearchCustomer()
