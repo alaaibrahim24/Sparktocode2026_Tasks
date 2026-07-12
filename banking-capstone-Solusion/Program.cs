@@ -192,7 +192,40 @@ namespace banking_capstone_Solution
 
         static void TransferAmount()
         {
+            Console.Write("From Account Number: ");
+            string from = Console.ReadLine();
 
+            Console.Write("To Account Number: ");
+            string to = Console.ReadLine();
+
+            int fromIndex = accountNumbers.IndexOf(from);
+            int toIndex = accountNumbers.IndexOf(to);
+
+            if (fromIndex == -1 || toIndex == -1)
+            {
+                Console.WriteLine("One or both accounts not found.");
+                return;
+            }
+
+            Console.Write("Transfer Amount: ");
+            double amount = double.Parse(Console.ReadLine());
+
+            if (amount <= 0)
+            {
+                Console.WriteLine("Invalid amount.");
+                return;
+            }
+
+            if (balances[fromIndex] < amount)
+            {
+                Console.WriteLine("Insufficient balance.");
+                return;
+            }
+
+            balances[fromIndex] -= amount;
+            balances[toIndex] += amount;
+
+            Console.WriteLine("Transfer Successful.");
         }
 
         static void ListAllAccounts()
