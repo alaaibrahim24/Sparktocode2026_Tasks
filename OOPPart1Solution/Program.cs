@@ -57,6 +57,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("7. Compare Two Account Balances");
                 Console.WriteLine("8. Restock Product");
                 Console.WriteLine("9. Transfer Between Accounts");
+                Console.WriteLine("10. Update Student Grade");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -154,6 +155,15 @@ namespace OOPPart1Solution
                         {
                             Console.WriteLine("Insufficient balance.");
                         }
+                        break;
+
+                    case 10:
+                        Console.Write("Enter new grade (0-100): ");
+                        double grade = double.Parse(Console.ReadLine());
+
+                        student1.UpdateGrade(grade);
+
+                        student1.PrintInformation();
                         break;
 
 
