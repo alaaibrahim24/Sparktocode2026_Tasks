@@ -51,23 +51,112 @@ namespace OOPPart2Solution
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("Case 1");
+                    
+                        
+                        Console.Write("Enter Room Number: ");
+
+                        if (!int.TryParse(Console.ReadLine(), out int num) || num <= 0)
+                        {
+                            Console.WriteLine("Error: Room number must be a positive integer.");
+                            break;
+                        }
+
+                        if (rooms.Any(r => r.RoomNumber == num))
+                        {
+                            Console.WriteLine("Error: Room number already exists.");
+                            break;
+                        }
+
+                        Console.Write("Enter Room Type (Single/Double/Suite): ");
+                        string type = Console.ReadLine();
+
+                        Console.Write("Enter Price Per Night: ");
+
+                        if (!double.TryParse(Console.ReadLine(), out double price) || price <= 0)
+                        {
+                            Console.WriteLine("Error: Price must be a positive decimal.");
+                            break;
+                        }
+
+                        rooms.Add(new Room(num, type, price, true));
+
+                        Console.WriteLine($"Room {num} added successfully!");
+                        Console.WriteLine($"Total rooms: {rooms.Count}");
+
                         break;
+
 
                     case 2:
-                        Console.WriteLine("Case 2");
+                        Console.Write("Enter Guest ID: ");
+                        string id = Console.ReadLine();
+
+                        if (guests.Any(g => g.GuestId == id))
+                        {
+                            Console.WriteLine("Error: Guest ID already exists.");
+                            break;
+                        }
+
+                        Console.Write("Enter Guest Name: ");
+                        string name = Console.ReadLine();
+
+                        Console.Write("Enter Check-in Date (YYYY-MM-DD): ");
+                        string checkInDate = Console.ReadLine();
+
+                        Console.Write("Enter Total Nights: ");
+
+                        if (!int.TryParse(Console.ReadLine(), out int nights) || nights <= 0)
+                        {
+                            Console.WriteLine("Error: Total nights must be a positive integer.");
+                            break;
+                        }
+
+                        guests.Add(new Guest(id, name, 0, checkInDate, nights));
+
+                        Console.WriteLine($"Guest {name} registered successfully!");
+                        Console.WriteLine($"Total guests: {guests.Count}");
+
                         break;
 
+
+
+
                     case 3:
-                        Console.WriteLine("Case 3");
+                        BookRoom(rooms, guests);
                         break;
 
                     case 4:
                         Console.WriteLine("Case 4");
+                        if (!rooms.Any())
+                        {
+                            Console.WriteLine("No rooms have been added yet.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Total Rooms: {rooms.Count}\n");
+                            var sortedRooms = rooms.OrderBy(r => r.RoomNumber).ToList();
+                            foreach (var r in sortedRooms)
+                            {
+                                r.DisplayRoom();
+                            }
+                        }
+                        
                         break;
 
                     case 5:
                         Console.WriteLine("Case 5");
+                        if (!guests.Any())
+                        {
+                            Console.WriteLine("No guests have been registered yet.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Total Guests: {guests.Count}\n");
+                            var sortedGuests = guests.OrderBy(g => g.GuestName).ToList();
+                            foreach (var g in sortedGuests)
+                            {
+                                g.DisplayGuest();
+                            }
+                        }
                         break;
 
                     case 6:
@@ -126,6 +215,11 @@ namespace OOPPart2Solution
                     Console.ReadKey();
                 }
             }
+        }
+
+        private static void BookRoom(List<Room> rooms, List<Guest> guests)
+        {
+            throw new NotImplementedException();
         }
     }
 }
