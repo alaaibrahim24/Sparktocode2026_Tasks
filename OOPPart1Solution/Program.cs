@@ -64,6 +64,13 @@ namespace OOPPart1Solution
                         account1.PrintInformation();
                         break;
 
+                    case 2:
+                        Console.Write("Enter new address: ");
+                        string address = Console.ReadLine();
+                        student1.UpdateAddress(address);
+                        student1.PrintInformation();
+                        break;
+
                 }
             }
         }
