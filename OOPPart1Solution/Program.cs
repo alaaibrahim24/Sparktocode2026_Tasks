@@ -60,6 +60,9 @@ namespace OOPPart1Solution
 
                 switch (choice)
                 {
+                    case 1:
+                        account1.PrintInformation();
+                        break;
 
                 }
             }
