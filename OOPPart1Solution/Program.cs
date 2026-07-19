@@ -59,6 +59,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("9. Transfer Between Accounts");
                 Console.WriteLine("10. Update Student Grade");
                 Console.WriteLine("11. Student Report Card");
+                Console.WriteLine("12. Apply Product Discount");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -182,6 +183,17 @@ namespace OOPPart1Solution
                         }
 
                         break;
+
+                    case 12:
+                        Console.Write("Enter discount percentage: ");
+                        double discount = double.Parse(Console.ReadLine());
+
+                        product1.ApplyDiscount(discount);
+
+                        Console.WriteLine("Discount applied successfully.");
+                        product1.PrintDetails();
+                        break;
+
 
 
                     case 20:
