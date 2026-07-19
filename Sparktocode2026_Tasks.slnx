@@ -3,6 +3,7 @@
     <File Path=".editorconfig" />
   </Folder>
   <Project Path="banking-capstone-Solusion/banking-capstone-Solusion.csproj" Id="32a7c732-2c9f-46c4-8698-5bfb69db8ea8" />
+  <Project Path="OOPPart1Solution/OOPPart1Solution.csproj" Id="4839c96e-04f8-49f8-93b6-00e895cf4c85" />
   <Project Path="Task1Solution/Task1Solution.csproj" Id="821c5b76-d12e-40a6-ad02-3f93d0e74d3e" />
   <Project Path="Task2Solution/Task2Solution.csproj" />
   <Project Path="Task3Solution/Task3Solution/Task3Solution.csproj" Id="21805d44-e376-4e04-a0f1-daf2ccdc0e9d" />
