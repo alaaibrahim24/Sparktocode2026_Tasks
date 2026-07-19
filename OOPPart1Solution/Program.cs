@@ -60,6 +60,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("10. Update Student Grade");
                 Console.WriteLine("11. Student Report Card");
                 Console.WriteLine("12. Apply Product Discount");
+                Console.WriteLine("13. Check Product Stock Status");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -194,6 +195,23 @@ namespace OOPPart1Solution
                         product1.PrintDetails();
                         break;
 
+                    case 13:
+                        Console.WriteLine("===== Product Stock Status =====");
+
+                        if (product1.Quantity > 10)
+                        {
+                            Console.WriteLine(product1.Name + " is In Stock.");
+                        }
+                        else if (product1.Quantity > 0)
+                        {
+                            Console.WriteLine(product1.Name + " is Low Stock.");
+                        }
+                        else
+                        {
+                            Console.WriteLine(product1.Name + " is Out of Stock.");
+                        }
+
+                        break;
 
 
                     case 20:
