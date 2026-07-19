@@ -88,6 +88,14 @@ namespace OOPPart1Solution
                     case 5:
                         product1.PrintDetails();
                         break;
+
+                    case 20:
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
                 }
             }
         }
