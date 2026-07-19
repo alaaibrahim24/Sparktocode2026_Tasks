@@ -58,6 +58,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("8. Restock Product");
                 Console.WriteLine("9. Transfer Between Accounts");
                 Console.WriteLine("10. Update Student Grade");
+                Console.WriteLine("11. Student Report Card");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -164,6 +165,22 @@ namespace OOPPart1Solution
                         student1.UpdateGrade(grade);
 
                         student1.PrintInformation();
+                        break;
+
+                    case 11:
+                        Console.WriteLine("===== Student Report =====");
+                        Console.WriteLine("Name: " + student1.Name);
+                        Console.WriteLine("Address: " + student1.Address);
+
+                        if (student1.Grade >= 60)
+                        {
+                            Console.WriteLine("Result: PASS");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Result: FAIL");
+                        }
+
                         break;
 
 

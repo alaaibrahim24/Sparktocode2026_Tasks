@@ -11,6 +11,12 @@ namespace OOPPart1Solution
         private int age;
         private double grade;
 
+        // Read-only property
+        public double Grade
+        {
+            get { return grade; }
+        }
+
         public void UpdateAddress(string newAddress)
         {
             Address = newAddress;
@@ -37,4 +43,3 @@ namespace OOPPart1Solution
         }
     }
 }
-
