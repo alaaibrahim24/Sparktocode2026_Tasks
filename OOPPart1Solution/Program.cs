@@ -55,6 +55,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("5. View Product Details");
                 Console.WriteLine("6. Register Student");
                 Console.WriteLine("7. Compare Two Account Balances");
+                Console.WriteLine("8. Restock Product");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -119,6 +120,16 @@ namespace OOPPart1Solution
                         {
                             Console.WriteLine("Both accounts have the same balance.");
                         }
+                        break;
+
+                    case 8:
+                        Console.Write("Enter quantity to add: ");
+                        int quantity = int.Parse(Console.ReadLine());
+
+                        product1.Restock(quantity);
+
+                        Console.WriteLine("Stock Updated Successfully.");
+                        product1.PrintDetails();
                         break;
 
 
