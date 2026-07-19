@@ -50,7 +50,9 @@ namespace OOPPart2Solution
 
                 switch (choice)
                 {
-                    
+                    case 1:
+                        Console.WriteLine("Case 1");
+                        break;
                 }
 
                 if (!exit)
