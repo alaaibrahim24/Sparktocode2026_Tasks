@@ -54,6 +54,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("4. Make Withdrawal");
                 Console.WriteLine("5. View Product Details");
                 Console.WriteLine("6. Register Student");
+                Console.WriteLine("7. Compare Two Account Balances");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -102,6 +103,22 @@ namespace OOPPart1Solution
 
                         Console.WriteLine("Student Registered Successfully.");
                         student2.PrintInformation();
+                        break;
+
+
+                    case 7:
+                        if (account1.Balance > account2.Balance)
+                        {
+                            Console.WriteLine(account1.CustomerName + " has the higher balance.");
+                        }
+                        else if (account2.Balance > account1.Balance)
+                        {
+                            Console.WriteLine(account2.CustomerName + " has the higher balance.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Both accounts have the same balance.");
+                        }
                         break;
 
 
