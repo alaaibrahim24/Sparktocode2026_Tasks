@@ -56,6 +56,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("6. Register Student");
                 Console.WriteLine("7. Compare Two Account Balances");
                 Console.WriteLine("8. Restock Product");
+                Console.WriteLine("9. Transfer Between Accounts");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -130,6 +131,29 @@ namespace OOPPart1Solution
 
                         Console.WriteLine("Stock Updated Successfully.");
                         product1.PrintDetails();
+                        break;
+
+                    case 9:
+                        Console.Write("Enter amount to transfer: ");
+                        double amount = double.Parse(Console.ReadLine());
+
+                        if (account1.Balance >= amount)
+                        {
+                            account1.Withdraw(amount);
+                            account2.Deposit(amount);
+
+                            Console.WriteLine("Transfer completed successfully.");
+
+                            Console.WriteLine("\nAccount 1:");
+                            account1.PrintInformation();
+
+                            Console.WriteLine("\nAccount 2:");
+                            account2.PrintInformation();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Insufficient balance.");
+                        }
                         break;
 
 
