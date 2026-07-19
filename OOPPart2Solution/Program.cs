@@ -98,6 +98,10 @@ namespace OOPPart2Solution
                         Console.WriteLine("Case 12");
                         break;
 
+                    case 13:
+                        Console.WriteLine("Case 13");
+                        break;
+
                 }
 
                 if (!exit)
