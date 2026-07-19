@@ -110,6 +110,14 @@ namespace OOPPart2Solution
                         Console.WriteLine("Case 15");
                         break;
 
+                    case 0:
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+
                 }
 
                 if (!exit)
