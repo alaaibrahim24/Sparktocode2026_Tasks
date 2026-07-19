@@ -71,6 +71,13 @@ namespace OOPPart1Solution
                         student1.PrintInformation();
                         break;
 
+                    case 3:
+                        Console.Write("Deposit amount: ");
+                        double dep = double.Parse(Console.ReadLine());
+                        account1.Deposit(dep);
+                        account1.PrintInformation();
+                        break;
+
                 }
             }
         }
