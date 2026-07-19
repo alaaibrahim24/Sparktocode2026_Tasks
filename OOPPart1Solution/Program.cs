@@ -78,6 +78,12 @@ namespace OOPPart1Solution
                         account1.PrintInformation();
                         break;
 
+                    case 4:
+                        Console.Write("Withdraw amount: ");
+                        double with = double.Parse(Console.ReadLine());
+                        account1.Withdraw(with);
+                        account1.PrintInformation();
+                        break;
                 }
             }
         }
