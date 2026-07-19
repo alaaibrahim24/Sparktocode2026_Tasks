@@ -84,6 +84,10 @@ namespace OOPPart1Solution
                         account1.Withdraw(with);
                         account1.PrintInformation();
                         break;
+
+                    case 5:
+                        product1.PrintDetails();
+                        break;
                 }
             }
         }
