@@ -53,6 +53,7 @@ namespace OOPPart1Solution
                 Console.WriteLine("3. Make Deposit");
                 Console.WriteLine("4. Make Withdrawal");
                 Console.WriteLine("5. View Product Details");
+                Console.WriteLine("6. Register Student");
                 Console.WriteLine("20. Exit");
 
                 Console.Write("Choose: ");
@@ -88,6 +89,21 @@ namespace OOPPart1Solution
                     case 5:
                         product1.PrintDetails();
                         break;
+
+                    case 6:
+                        Console.Write("Enter Student Name: ");
+                        student2.Name = Console.ReadLine();
+
+                        Console.Write("Enter Student ID: ");
+                        student2.Id = int.Parse(Console.ReadLine());
+
+                        Console.Write("Enter Student Address: ");
+                        student2.Address = Console.ReadLine();
+
+                        Console.WriteLine("Student Registered Successfully.");
+                        student2.PrintInformation();
+                        break;
+
 
                     case 20:
                         exit = true;
